@@ -69,8 +69,9 @@ public:
     std::string& back();
 
 	// interface to StrBlobPtr
-	StrBlobPtr begin();  // can't be defined until StrBlobPtr is
+	StrBlobPtr begin();  // can't be defined until StrBlobPtr is already defined
     StrBlobPtr end();
+
 private:
     std::shared_ptr<std::vector<std::string>> data; 
     // throws msg if data[i] isn't valid
